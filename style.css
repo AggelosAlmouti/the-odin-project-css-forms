@@ -132,11 +132,28 @@ input {
     border-style: solid;
     border-color: #E5E7EB;
     border-width: thin;
-    border-radius: 3px;
+    border-radius: 4px;
+    height: 1.3rem;
 }
 
 label {
     font-size: 0.6rem;
     font-weight: bold;
     color: gray;
+}
+
+#phone_number::-webkit-outer-spin-button,
+#phone_number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    border-color: #6495ED;
+    outline: none;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.error {
+    border-color: red;
 }
