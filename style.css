@@ -157,3 +157,10 @@ input:focus {
 .error {
     border-color: red;
 }
+
+.input_field #error_msg {
+    font-size: 0.7rem;
+    margin: 0;
+    opacity: 0;
+    color: red;
+}

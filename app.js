@@ -1,8 +1,16 @@
-password = document.querySelector("password");
-confirm_password = document.querySelector("confirm_password");
-button = document.querySelector("button");
+password = document.getElementById('password');
+confirmPassword = document.getElementById('confirm_password');
+errorMSG = document.getElementById('error_msg');
 
-button.addEventListener('click', (e) => {
-    // if pass content don't match, add error class to passwords
-    // and error message
-})
+document.querySelector('button').addEventListener('click', () => {
+    console.log(errorMSG);
+    if (password.value != confirm_password.value) {
+        password.classList.add('error');
+        confirmPassword.classList.add('error');
+        errorMSG.style.opacity = 1;
+    } else {
+        password.classList.remove('error');
+        confirmPassword.classList.remove('error');
+        errorMSG.style.opacity = 0;
+    }
+});
